@@ -19,7 +19,7 @@ function App() {
           <h1>{import.meta.env.VITE_APP_TITLE}</h1>
           <p>API: {import.meta.env.VITE_API_URL}</p>
           <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
+            Edit <code>src/App.tsx</code> and save to test <code>HMR TEAM</code>
           </p>
         </div>
         <button
