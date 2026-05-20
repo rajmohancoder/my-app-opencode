@@ -22,6 +22,10 @@ jobs:
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
+        env:
+          VITE_APP_TITLE: ${{ vars.VITE_APP_TITLE }}  
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
+          VITE_FEATURE_FLAG_NEW_UI: ${{ vars.VITE_FEATURE_FLAG_NEW_UI }}
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ASHY_RIVER_01F8DB510 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
