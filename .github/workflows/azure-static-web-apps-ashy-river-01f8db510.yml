@@ -16,6 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          ref: ${{ github.event.inputs.version || github.ref }}
           submodules: true
           lfs: false
       - name: Build And Deploy
